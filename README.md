@@ -1,4 +1,4 @@
-# Search Engine UI (React Version)
+# Search Engine UI
 
 ![Search Engine UI Cover](/public/Assets/Image/Cover.jpg)
 
