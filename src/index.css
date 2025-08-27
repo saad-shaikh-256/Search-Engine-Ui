@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+  --font-afacad: Afacad, sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow: hidden;
+  @apply font-afacad bg-white text-neutral-800;
+}
+
+@utility fit-size {
+  @apply h-fit w-fit;
+}
+
+@utility flex-Center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-Between {
+  @apply flex items-center justify-between;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(1.5px);
+}
+
+.bookmark-List::-webkit-scrollbar {
+  display: none;
+}
